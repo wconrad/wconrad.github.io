@@ -31,6 +31,6 @@ scenario](https://github.com/cucumber/cucumber/wiki/Feature-Introduction):
       When I press the coffee button
       Then I should be served a coffee
 
-I like it.  I don't know if every bug report can go in this form, but
-it's nice to read, and clearly separates the setup from the action
+I like it.  I don't know if this is a good form for every bug report,
+but it's nice to read, and clearly separates the setup from the action
 from the result.
