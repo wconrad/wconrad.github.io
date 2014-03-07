@@ -10,10 +10,10 @@ Last weekend I published
 in Ruby.  I am fascinated by what's inside a compiler or interpreter.
 Now, BASIC isn't that exciting a language, but it's a good one to
 start with before moving on to more difficult things.  Even though
-basic101 is just a tutorial project, it is reasonably polished.  It
-has decent error detection, runs a fair subset of 1980's BASIC, and
-the code is well organized.  Even (or perhaps _especially_) a tutorial
-project should be good, clean code.
+basic101 is just a tutorial project, it is reasonably polished.  has
+decent error detection, runs a fair subset of 1980's BASIC, and the
+code is well organized.  Even (especially?) a tutorial project
+should be good, clean code.
 
 # Parslet
 
@@ -30,9 +30,11 @@ is all ruby, _meta_ is possible.  For example, suppose you are writing
 a parser for a language that must ignore spaces in keywords (FORTRAN).
 In treetop, this rule parses the keyword `STOP`:
 
+    {% highlight ruby %}
     rule keyword_stop
       'S' spaces 'T' spaces 'O' spaces 'P'
     end
+    {% endhighlight %}
 
 (the _spaces_ rule, not listed here, eats zero or more characters of
 white space).  This is hard to read, repetitive, and litters the parse
@@ -43,6 +45,7 @@ about what's in it.  What's important is that this method takes a
 string and returns a little Parslet parser that recognizes keywords
 which may have embedded spaces:
 
+    {% highlight ruby %}
     def keyword(s)
       s.chars.map do |c|
         str(c)
@@ -50,12 +53,15 @@ which may have embedded spaces:
         l >> spaces >> r
       end
     end
+    {% endhighlight %}
 
 And then just use it:
 
+    {% highlight ruby %}
     rule(:stop) do
       sym('STOP') >> line_break
     end
+    {% endhighlight %}
 
 Parlet is nice like that, and in many other ways.
 
@@ -63,7 +69,7 @@ Parlet is nice like that, and in many other ways.
 
 I also published it as a gem, even though nobody is likely to use it.
 Having it as a gem does make it easier for some lost soul to try it.
-And, for gems, there doesn't seem to be any real bar to entry: A great
-many of them are, in one way or another, not really useful to anyone,
-by virtual of being undocumented, obsolete, or whatever.  Hey, my gem
-has _test coverage_.
+And, for publishing a gem, there doesn't seem to be any real bar to
+entry: A great many of them are, in one way or another, not really
+useful to anyone, by virtual of being undocumented, obsolete, or
+whatever.  Hey, my gem has _test coverage_.
