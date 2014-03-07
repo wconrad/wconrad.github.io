@@ -5,12 +5,11 @@ date: 2014-03-07 04:23:00
 categories: fortran
 ---
 
-Now that I'm done with
-[basic101](http://www.github.com/wconrad/basic101), the next program I
-want to tackle is a FORTRAN interpreter.  I've already tried this
-twice; this will be my third try.
+Now that I'm done with [basic101][basic101], the next program I want
+to tackle is a FORTRAN interpreter.  I've already tried this twice;
+this will be my third try.
 
-# Take one - treetop
+# Take one - FORTRAN with treetop
 
 The first try used the [treetop](http://treetop.rubyforge.org/)
 parser, but I never could figure out how to cleanly turn the treetop
@@ -30,30 +29,29 @@ treetop to do that.
 
 It's not treetop's fault.  I'm just a bit dense.
 
-I remembered the pain of plowing all that work into the parser for
-nothing, so when I wrote basic101, the first thing I did was an entire
-slice of the language, enough to parse and run a simple `REM`
-statement.  After that, `PRINT 1`.  I wanted to prove that
-[Parslet](http://kschiess.github.io/parslet/), and my general approach
-to the interpreter, was viable _before_ I sunk a bunch of work into
-it.
+# Take two - FORTRAN with Parslet
 
-# Take two - parslet
-
-The second try at FORTRAN used Parslet instead of treetop, but I
+The second try at FORTRAN used [Parslet][parslet] instead of treetop, but I
 didn't really understand Parslet's transform rules.  In frustration, I
 stopped this project, too.  I didn't get very deep into it, so it
 wasn't much of a loss.
 
-# Take two-and-a-half: basic101
+# Take two-and-a-half: basic101 with Parslet
 
 I then decided to write basic101 in order to learn Parslet more
 thoroughly, with a simpler language, so that I could spend more of my
 time learning the mechanics of parsing and transforming, and less time
 worrying about the language.  FORTRAN is a formidible language.
 
-There are two things that can I didn't quite get about Parslet when I
-started basic101:
+I remembered the pain of my first try at Fortran, where I plowed all
+that work into the parser for nothing, so when I wrote basic101, the
+first thing I did was an entire slice of the language, enough to parse
+and run a simple `REM` statement.  After that, `PRINT 1`.  I wanted to
+prove that Parslet, and my general approach to the interpreter, was
+viable _before_ I sunk a bunch of work into it.
+
+There are two things about Parslet that I didn't understand at the
+start of basic101:
 
 1. A transform rule must match _an entire hash at once_.
 2. Left-associative operators need special techniques to handle, lest
@@ -63,5 +61,10 @@ Writing basic101 taught me the first thing pretty well: I could stand
 in front of a white board and explain it to someone.  The second, I
 can't.  I can muddle through it, but not adeptly.
 
+# Take three: FORTRAN with Parslet, again
+
 So here we are.  I think I can bend Parslet to my will (or me to its)
 well enough now to handle FORTRAN.  It's time for FORTRAN, take three.
+
+[basic101]: http://www.github.com/wconrad/basic101
+[parslet]: http://kschiess.github.io/parslet/
