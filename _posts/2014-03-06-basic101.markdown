@@ -10,10 +10,10 @@ Last weekend I published
 in Ruby.  I am fascinated by what's inside a compiler or interpreter.
 Now, BASIC isn't that exciting a language, but it's a good one to
 start with before moving on to more difficult things.  Even though
-basic101 is just a tutorial project, it is fairly well polished.  It
-has decent error detection, runs a fairly good subset of 1980's BASIC,
-and the code is fairly well organized.  Even (or perhaps _especially_)
-a tutorial project should be good, clean code.
+basic101 is just a tutorial project, it is reasonably polished.  It
+has decent error detection, runs a fair subset of 1980's BASIC, and
+the code is well organized.  Even (or perhaps _especially_) a tutorial
+project should be good, clean code.
 
 # Parslet
 
