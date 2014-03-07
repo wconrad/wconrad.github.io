@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Next Project: FORTRAN"
-date: 2014-03-06 17:54:00
+date: 2014-03-07 04:23:00
 categories: fortran
 ---
 
@@ -52,16 +52,16 @@ thoroughly, with a simpler language, so that I could spend more of my
 time learning the mechanics of parsing and transforming, and less time
 worrying about the language.  FORTRAN is a formidible language.
 
-There are two things that can I didn't quite get:
+There are two things that can I didn't quite get about Parslet when I
+started basic101:
 
 1. A transform rule must match _an entire hash at once_.
 2. Left-associative operators need special techniques to handle, lest
    you cause the parser to loop infinitely.
 
-Writing basic101 taught me the first thing pretty well; the second, I
-can muddle through.  I don't think I could sit in front of a white
-board and explain it to someone.  That's how I know I don't really
-understand it yet.
+Writing basic101 taught me the first thing pretty well: I could stand
+in front of a white board and explain it to someone.  The second, I
+can't.  I can muddle through it, but not adeptly.
 
 So here we are.  I think I can bend Parslet to my will (or me to its)
 well enough now to handle FORTRAN.  It's time for FORTRAN, take three.
