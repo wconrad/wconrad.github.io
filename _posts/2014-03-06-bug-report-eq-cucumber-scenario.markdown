@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Bug Report == Cucumber Scenario?"
-date:   2014-03-06 06:19:00
-categories: programming
+title: "Bug Report == Cucumber Scenario?"
+date: 2014-03-06 06:19:00
+categories: cucumber
 ---
 
 It wasn't until after I created [this bug

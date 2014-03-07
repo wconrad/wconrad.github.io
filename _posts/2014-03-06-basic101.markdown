@@ -1,0 +1,69 @@
+---
+layout: post
+title: "A BASIC Interpreter in Ruby"
+date: 2014-03-06 16:20:00
+categories: basic parslet gem
+---
+
+Last weekend I published
+[basic101](https://github.com/wconrad/basic101), a BASIC interpreter
+in Ruby.  I am fascinated by what's inside a compiler or interpreter.
+Now, BASIC isn't that exciting a language, but it's a good one to
+start with before moving on to more difficult things.  Even though
+basic101 is just a tutorial project, it is fairly well polished.  It
+has decent error detection, runs a fairly good subset of 1980's BASIC,
+and the code is fairly well organized.  Even (or perhaps _especially_)
+a tutorial project should be good, clean code.
+
+# Parslet
+
+I wanted to get some solid experience with
+[Parslet](http://kschiess.github.io/Parslet/) before moving on to
+other things.  Parslet is an easy to use [Parsing Expression
+Grammar](http://en.wikipedia.org/wiki/Parsing_expression_grammar)
+(PEG), with a twist: It has a wonderful pattern matching DSL for
+turning a parse tree into an abstract syntax tree.  Another plus is
+that (like treetop or citrus), it is an internal DSL rather than
+external.  Not having a separate compilation step is nice, but that's
+not the important thing.  What's important is that since Parslet's DSL
+is all ruby, _meta_ is possible.  For example, suppose you are writing
+a parser for a language that must ignore spaces in keywords (FORTRAN).
+In treetop, this rule parses the keyword `STOP`:
+
+    rule keyword_stop
+      'S' spaces 'T' spaces 'O' spaces 'P'
+    end
+
+(the _spaces_ rule, not listed here, eats zero or more characters of
+white space).  This is hard to read, repetitive, and litters the parse
+rules with a separate rule for each keyword.
+
+With Parslet, you can just define a method like this (don't worry
+about what's in it.  What's important is that this method takes a
+string and returns a little Parslet parser that recognizes keywords
+which may have embedded spaces:
+
+    def keyword(s)
+      s.chars.map do |c|
+        str(c)
+      end.inject do |l, r|
+        l >> spaces >> r
+      end
+    end
+
+And then just use it:
+
+    rule(:stop) do
+      sym('STOP') >> line_break
+    end
+
+Parlet is nice like that, and in many other ways.
+
+# A BASIC _gem_?!
+
+I also published it as a gem, even though nobody is likely to use it.
+Having it as a gem does make it easier for some lost soul to try it.
+And, for gems, there doesn't seem to be any real bar to entry: A great
+many of them are, in one way or another, not really useful to anyone,
+by virtual of being undocumented, obsolete, or whatever.  Hey, my gem
+has _test coverage_.
