@@ -59,6 +59,7 @@ Such a thing in this interpreter might be handled with a strategy
 object which validates and returns the significant part of any
 identifer.  Here's a strict strategy, adhering to the standard:
 
+    {% highlight ruby %}
     class StrictIdentifierStrategy
 
       def significant(identifier)
@@ -67,12 +68,14 @@ identifer.  Here's a strict strategy, adhering to the standard:
       end
 
     end
+    {% endhighlight %}
 
 Here's a strategy which allows any length identifier, but only the
 first so-many characters are significant (many FORTRANs from the era
 did this; the number of significant characters was usually fixed for a
 given compiler, but varied from compiler to compiler):
 
+    {% highlight ruby %}
     class SubstringIdentifierStrategy
 
       def initialize(significant_characters)
@@ -84,17 +87,20 @@ given compiler, but varied from compiler to compiler):
       end
 
     end
+    {% endhighlight %}
 
 When the interpreter starts, the appropriate strategy is picked,
 perhaps depending upon a command-line switch:
 
+    {% highlight ruby %}
     @interpreter.identifier_strategy =
       if @args.long_identifiers
         SubstringIdentifierStrategy.new(@args.long_identifiers)
       else
         StrictIdentifierStrategy.new
       end
-   end
+    end
+    {% endhighlight %}
 
 [fortran-66-spec]: http://www.fh-jena.de/~kleine/history/.../ansi-x3dot9-1966-Fortran66.pdf
 [fortran-77-spec]: http://www.fh-jena.de/~kleine/history/languages/ansi-x3dot9-1978-Fortran77.pdf
