@@ -26,16 +26,6 @@ Also, I'm going to need programs to run.  If I limit myself to FORTRAN
 
 So, FORTRAN 77 it is.
 
-# Exploiting OOP
-
-When I read the specification, it almost seems as though there was an
-object model in the committee's mind.  I think an object model will
-pretty much fall out of the spec.  I intend to match the
-specification's implied model closely, where practical.  It just seems
-easier that way.  It will be easier to reason about the program if its
-design matches the specification's implied object model as closely as
-possible, even if that means extra objects.
-
 # Be strict on input
 
 A compliant _processor_ (the specification's word for the compiler or
@@ -51,11 +41,60 @@ nice badge to pin on the project.
 
 ## But not always
 
-I imagine, once I start to feed it programs from the real world, I
-will find non-compliant programs that exploit some extension or
-looseness in the compiler they were written for.  I can imagine it
-accepting switches, a la gcc, to allow various extensions or
+I imagine, once I start to run programs from the real world, I will
+find non-compliant programs that exploit some extension or looseness
+in the compiler they were written for.  I can imagine the interpreter
+needing to accept switches, a la gcc, to allow various extensions or
 non-compliant behaviors.
+
+A nice, OOP way to handle this would be to keep particulars of what is
+allowed and what is not out of the interpreter proper, and keep them
+in "pluggable" strategy objects which the interpreter would use.  For
+example, the FORTRAN 77 spec says that identifiers are no longer than
+six characters.  Many compilers from the era allowed longer
+identifiers, but recognized only so many significant characters of
+each identifer--the remaining characters were just noise.
+
+Such a thing in this interpreter might be handled with a strategy
+object which validates and returns the significant part of any
+identifer.  Here's a strict strategy, adhering to the standard:
+
+    class StrictIdentifierStrategy
+
+      def significant(identifier)
+        raise IdentifierTooLong if identifier.length > 6
+        identifier
+      end
+
+    end
+
+Here's a strategy which allows any length identifier, but only the
+first so-many characters are significant (many FORTRANs from the era
+did this; the number of significant characters was usually fixed for a
+given compiler, but varied from compiler to compiler):
+
+    class SubstringIdentifierStrategy
+
+      def initialize(significant_characters)
+        @significant_characters = significant_characters
+      end
+
+      def significant(identifier)
+        identifier[0...significant_characters]
+      end
+
+    end
+
+When the interpreter starts, the appropriate strategy is picked,
+perhaps depending upon a command-line switch:
+
+    @interpreter.identifier_strategy =
+      if @args.long_identifiers
+        SubstringIdentifierStrategy.new(@args.long_identifiers)
+      else
+        StrictIdentifierStrategy.new
+      end
+   end
 
 [fortran-66-spec]: http://www.fh-jena.de/~kleine/history/.../ansi-x3dot9-1966-Fortran66.pdf
 [fortran-77-spec]: http://www.fh-jena.de/~kleine/history/languages/ansi-x3dot9-1978-Fortran77.pdf
