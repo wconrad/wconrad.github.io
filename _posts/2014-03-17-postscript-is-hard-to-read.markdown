@@ -57,8 +57,8 @@ important when reading postscript.
 
 The author can help you keep track of the operand stack by writing
 short functions so you don't have to hold too much in your head at
-once, and with the judicious use of the comments.  But that's all work
-the author has to do in order to give you something that most other
+once, and with the judicious use of comments.  But that's all work the
+author has to do in order to give you something that most other
 languages have out of the box.
 
 Postscript is a strange language like that.  It has some fairly
