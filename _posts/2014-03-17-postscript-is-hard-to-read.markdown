@@ -2,7 +2,7 @@
 layout: post
 title: "But PostScript is harder to read than LISP"
 date: 2014-03-17 14:19:00
-categories: fortran
+categories: postscript lisp
 ---
 
 There is one significant area where Postscript is worse than LISP.  In

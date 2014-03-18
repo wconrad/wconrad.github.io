@@ -2,7 +2,7 @@
 layout: post
 title: "PostScript is LISP, sort of"
 date: 2014-03-13 12:45:00
-categories: fortran
+categories: postscript lisp
 ---
 
 I was going doing an exercise from [Thinking in
