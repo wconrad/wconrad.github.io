@@ -10,9 +10,9 @@ fact, it's worse than any other language I've used in this regard:
 It's hard to read.
 
 It all comes from Postscript's minimal syntax and lack of a way to
-syntactically group a function's operands.  This syntax requires the
-reader, if he has any chance of understand what the code does, to know
-the calling sequence of every function he reads.  Let me explain.
+syntactically group a function's operands.  If you are to understand
+what the code does, you have to know the calling sequence of every
+function you read.  Let me explain.
 
 Here's some C code that calls a function:
 
