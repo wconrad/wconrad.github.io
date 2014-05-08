@@ -23,12 +23,12 @@ other things.  Parslet is an easy to use [Parsing Expression
 Grammar](http://en.wikipedia.org/wiki/Parsing_expression_grammar)
 (PEG), with a twist: It has a wonderful pattern matching DSL for
 turning a parse tree into an abstract syntax tree.  Another plus is
-that (like treetop or citrus), it is an internal DSL rather than
-external.  Not having a separate compilation step is nice, but that's
-not the important thing.  What's important is that since Parslet's DSL
-is all ruby, _meta_ is possible.  For example, suppose you are writing
-a parser for a language that must ignore spaces in keywords (FORTRAN).
-In treetop, this rule parses the keyword `STOP`:
+that it is an internal DSL rather than external.  Not having a
+separate compilation step is nice, but that's not the important thing.
+What's important is that since Parslet's DSL is all ruby, _meta_ is
+possible.  For example, suppose you are writing a parser for a
+language that must ignore spaces in keywords (FORTRAN).  In treetop,
+this rule parses the keyword `STOP`:
 
     {% highlight ruby %}
     rule keyword_stop
