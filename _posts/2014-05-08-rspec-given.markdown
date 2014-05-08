@@ -83,10 +83,11 @@ see how similar they are:
 
 At first, Jim's "given" syntax looks like it's just renaming some
 methods: `let` becomes `Given`, `before(:each)` becomes `When`, and
-`specify` or `it` becomes `Then`, but there' more going on.  One thing
-I like is the addition of `And`: This is like a `Then`, but it does
-not redo the setup.  It inherits the state left by the previous `Then`
-or `And`.  That lets you do this (stolen from the gem's README):
+`specify` or `it` becomes `Then`, but there's more going on.  One
+thing I like is the addition of `And`: This is like a `Then`, but it
+does not redo the setup.  It inherits the state left by the previous
+`Then` or `And`.  That lets you do this (stolen from the gem's
+README):
 
     {% highlight ruby %}
     Then { pop_result == :top_item }
