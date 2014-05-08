@@ -1,3 +1,5 @@
 name: Wayne Conrad's Blog
 markdown: redcarpet
 highlighter: rouge
+gems:
+- jekyll-sitemap
