@@ -1,0 +1,9 @@
+---
+layout: post
+title: "test"
+date: 2014-05-09 06:10:00
+categories: test
+---
+
+Why is yesterday's blog post not showing up on Feedly?  Let's add
+another post to see what happens.
