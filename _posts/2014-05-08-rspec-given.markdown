@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "rspec-given: Specs that read like Cucumber"
-date: 2015-05-08 12:20:00
+date: 2014-05-08 12:20:00
 categories: ruby rspec testing
 ---
 
