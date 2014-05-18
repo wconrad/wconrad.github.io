@@ -166,7 +166,7 @@ p o.methods
 But the functions are unattached to the object.  You just have to know
 they are there.
 
-# Adding view helpers to the method
+# Adding view helpers to the models
 
 One way to avoid the problem of disconnected helper functions is to
 move the functions into the models they act upon.  Our models become:
