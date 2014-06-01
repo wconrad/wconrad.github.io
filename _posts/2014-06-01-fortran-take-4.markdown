@@ -20,7 +20,7 @@ from Fortran and write a Basic interpreter, in order to learn Parslet
 using a simpler language.  Having finished that, I went back to
 Fortran with renewed confidence.  So, on to:
 
-_Take 3_, against using the Parslet parser.  At which I failed, again,
+[_Take 3_]({% post_url 2014-03-06-starting-fortran %}), against using the Parslet parser.  At which I failed, again,
 when it came to generating the parse tree.  I just don't seem to be
 able to wrap my head around the mechanics of building a parse tree in
 Parslet.  Among other things, left associative operators are a pain in
@@ -40,14 +40,17 @@ lines of code to allow arbitrary backtracking.  With backtracking, a
 recursive descent compiler can parse languages such as Fortran.  So,
 with the tutorial still unpublished, I'm on to:
 
-[_Take 4_]({% post_url 2014-03-06-starting-fortran %}), using a
+_Take 4_, using a
 hand-rolled recursive descent compiler with backtracking.
 
 Finally, I'm getting some traction.  For the first time, I've got an
 interpreter that can execute some simple Fortran statements, such as:
 
+{% highlight fortran %}
       A = (1.0 + 2) / 3 ** (-4)
       PRINT *, 'A =', A
+{% endhighlight %}
+
 
 The interpreter has:
 
@@ -72,5 +75,5 @@ into that in basic101, so it's a bit messy there, but it's clean here.
 
 It remains to be seen whether the recursive descent compiler with
 backtracking is going to fly--Wikipedia warns that there could be
-atrouble ahead, such as possibly requiring exponential time.  But,
+trouble ahead, such as possibly requiring exponential time.  But,
 forging ahead...
