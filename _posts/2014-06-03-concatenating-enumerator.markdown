@@ -46,8 +46,8 @@ automatic repetition:
 
 There are five items being written, but only two format specifiers
 (`I2, I2`).  No problem, Fortran's got your back.  It will simply
-repeat the entire format specificier, writing two integers on each
-line, except for the last line, which only gets one integer:
+repeat the entire format specifier, writing two integers on each line,
+except for the last line, which only gets one integer:
 
     1 2
     3 4
