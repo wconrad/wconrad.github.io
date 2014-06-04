@@ -5,7 +5,7 @@ date: 2014-06-01 15:00:00
 categories: ruby fortran
 ---
 
-I've failed to make a Fortran interpreter, writtein in Ruby, three
+I've failed to make a Fortran interpreter, written in Ruby, three
 times now.
 
 _Take 1_ used the Treetop parser.  It's a great parser, but I could
