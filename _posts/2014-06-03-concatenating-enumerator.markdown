@@ -89,7 +89,7 @@ it would look something like this:
 end
 {% endhighlight %}
 
-So there's a _lot_ that can go on in Fortran formatted I/O.
+That's just the beginning.  So how do we go about taming it?
 
 # The problem
 
