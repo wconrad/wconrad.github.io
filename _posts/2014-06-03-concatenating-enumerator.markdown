@@ -20,7 +20,7 @@ them--this isn't mean to be a tutorial, so I'm going to gloss over a
 _lot_.  Just bask in the complexity.
 
 Here's a simple example writing an integer, a float ("real"
-in Fortran parlance(1) ), 
+in Fortran parlance<sup>1</sup>), 
 
 {% highlight fortran %}
       WRITE (*, 10) 1, 2.345, 'FOO'
@@ -30,7 +30,7 @@ in Fortran parlance(1) ),
 You can read the format statement as "an integer, printed using 4
 columns; a float (sorry, "real") using 7 characters, 2 of which are
 for the fractional part, and a "character" (the Fortran name for a
-string (2) ).
+string <sup>2</sup> ).
 
 This writes:
 
@@ -175,9 +175,11 @@ p enum.to_a    #=> [1, 2, 3, 4, 5]
 
 -----
 
-(1) The designers of Fortran had not yet caught on that floating point
-    numbers are a pretty miserable subset of real numbers.
+**Footnotes**
 
-(2) Yes, the data type we now call "string," fortran called
-    "character."  That makes naming some of the variables in a Fortran
-    interpreter _really_ awkward.
+<sup>1</sup> The designers of Fortran had not yet caught on that floating point
+numbers are a pretty miserable subset of real numbers.
+
+<sup>2</sup> Yes, the data type we now call "string," Fortran called
+"character."  That makes naming some of the variables in a Fortran
+interpreter _really_ awkward.
