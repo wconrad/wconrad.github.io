@@ -70,7 +70,7 @@ intimate awareness of internals that are certain to change.
 It feels like defeat to not be able to write a reasonable unit test
 for this reasonable code.  I think that feeling is wrong, though.
 It's not as important that there's a unit test for a piece of code as
-it is that is a test _somewhere_.
+it is that there is a test _somewhere_.
 
 So, I think I'm going to let the integration tests cover this one.
 It's not that bad: A great deal of [basic101][1] is covered through
