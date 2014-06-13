@@ -51,27 +51,26 @@ module Fortran77
 end
 {% endhighlight %}
 
-There isn't a thing wrong with this code that I can see, and yet it'd
-be a chore to test.  It interacts with four different objects, calling
-six different methods:
+There isn't a thing wrong with #write that I can see, and yet it'd be
+a chore to test.  It interacts with three different objects, calling
+five different methods:
 
 * `edit_descriptors.error_if_disagrees_with_io_list`
 * `edit_descriptors.write_record`
-* `edit_descriptors.to_s`
 * `unit.new_formatted_record`
 * `unit.write_formatted`
 * `io_list_iterator.end?`
 
 The test will spend much effort creating objects (or doubles) to
-interact with the test subject.  If the test uses real objects, it
-will take much effort to set them up.  If it uses doubles, it will be
-a source of friction, fantastically brittle, with an intimate
-awareness of internals that are certain to change.
+interact with the test subject.  If the test uses real objects, they
+have to be created, and that's not trivial.  If it uses doubles, it
+will be a source of friction, fantastically brittle, having an
+intimate awareness of internals that are certain to change.
 
 It feels like defeat to not be able to write a reasonable unit test
 for this reasonable code.  I think that feeling is wrong, though.
 It's not as important that there's a unit test for a piece of code as
-it is that it has test coverage.
+it is that is a test _somewhere_.
 
 So, I think I'm going to let the integration tests cover this one.
 It's not that bad: A great deal of [basic101][1] is covered through
@@ -82,9 +81,9 @@ resiliancy.
 
 In a program with significant external interactions (database,
 network, etc.), integration tests are harder to write, which changes
-the math: it may become more worthwhile to spend the effort on unit
-test coverage<sup>1</sup>.  But in an interpreter which reads from
-files and writes to files, integration tests are as easy as anything.
+the math: some unit tests which are hard may become
+worthwhile<sup>1</sup>.  But in an interpreter which reads from files
+and writes to files, integration tests are as easy as anything.
 
 <sup>1</sup> But see, for example, [hexagonal architecture][2] as a
 way of making an application easier to test.
