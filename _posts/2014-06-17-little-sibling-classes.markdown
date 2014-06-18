@@ -161,7 +161,7 @@ of shared behavior, mixin modules may be better than inheritance.
 
 You might be thinking that the one class kind of exploded into a lot
 code, and you'd be right.  So what's good about this?  We did get rid
-of the two boolean flags, and of the conditional in `#peek`.good.  But
+of the two boolean flags, and of the conditional in `#peek`.  But
 the real payoff comes where the classes are made:
 
 {% highlight ruby %}
