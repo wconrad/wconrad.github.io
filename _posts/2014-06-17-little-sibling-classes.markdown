@@ -157,7 +157,7 @@ end
 In a language without duck typing, these would each derive from some
 interface or base class.  With duck typing, and in cases like this
 where there is no shared behavior, there's no need (and even in cases
-of shared behavior, mixin modules may be better than inheritance.
+of shared behavior, mixin modules may be better than inheritance).
 
 You might be thinking that the one class kind of exploded into a lot
 code, and you'd be right.  So what's good about this?  We did get rid
