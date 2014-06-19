@@ -20,11 +20,18 @@ constant, where you precede a string with the count of how many
 characters are in it, and then a `H`:
 
 {% highlight fortran %}
+      PRINT *, 10
  10   FORMAT (1X, 5HHELLO)
 {% endhighlight %}
 
-This is the format statement you might use to print "HELLO".  This
-crazy syntax goes all the way back to Fortran I, and is still
+This is how you might print the word "HELLO".  The "5HHELLO" breaks
+down like this:
+
+* "5" - There are five characters in this...
+* "H" - ... Hollerith constant
+* "HELLO" - And they are "HELLO"
+
+This crazy syntax goes all the way back to Fortran I, and is still
 supported in Fortran77, so a FORTRAN compiler has to be able to handle
 it.
 
