@@ -38,4 +38,6 @@ it.
 When I do get around to looking at Rattler, this will be one of the
 things I want to know: Can it change its parsing behavior based on
 some prior parse node?  Can it use the count to know how many
-characters are in the string?
+characters are in the string?  Not because every parser should be able
+to parse Fortran, but because being able to parse a Hollerith constant
+means that the parser has a way to do unusual things when needed.
