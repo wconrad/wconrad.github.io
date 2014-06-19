@@ -1,0 +1,34 @@
+---
+layout: post
+title: "Rattler -- Yet another Parsing Expression Grammar for Ruby"
+date: 2014-06-19 10:00:00
+categories: ruby parsing-expression-grammars
+---
+
+I just noticed this: [Language Designers
+Wanted](http://www.rubyflow.com/items/11157-language-designers-wanted).
+It announces [rattler](https://github.com/jarhart/rattler), yet
+another PEG for Ruby.
+
+I don't have time to look at it now, so this is really just a bookmark
+for when "later" happens and I check it out.
+
+However, a quick look shows that it is an external DSL.  Those can
+have advantages and disadvantages.  The acid test of any parser,
+though, is how well it handles crazy things like Fortran's Hollerith
+constant, where you precede a string with the count of how many
+characters are in it, and then a `H`:
+
+{% highlight fortran %}
+ 10   FORMAT (1X, 5HHELLO)
+{% endhighlight %}
+
+This is the format statement you might use to print "HELLO".  This
+crazy syntax goes all the way back to Fortran I, and is still
+supported in Fortran77, so a FORTRAN compiler has to be able to handle
+it.
+
+When I do get around to looking at Rattler, this will be one of the
+things I want to know: Can it change its parsing behavior based on
+some prior parse node?  Can it use the count to know how many
+characters are in the string?
