@@ -10,14 +10,17 @@ Wanted](http://www.rubyflow.com/items/11157-language-designers-wanted).
 It announces [rattler](https://github.com/jarhart/rattler), yet
 another PEG for Ruby.
 
-I don't have time to look at it now, so this is really just a bookmark
-for when "later" happens and I check it out.
+A quick look shows that it is an external DSL.  Those are prettier to
+work with than internal DSLs, but somewhat less flexible.  As long as
+the DSL gives you a way to do everything you need to do, that's not a
+problem.  It also appears to generate useful parse trees pretty
+easily.  But the most exciting thing about Rattler is that it handles
+left recursion.  None of the other Ruby PEGs I've worked with
+(Treetop, Citrus, Parslet) will do that.
 
-However, a quick look shows that it is an external DSL.  Those can
-have advantages and disadvantages.  The acid test of any parser,
-though, is how well it handles crazy things like Fortran's Hollerith
-constant, where you precede a string with the count of how many
-characters are in it, and then a `H`:
+The acid test of any parser is how well it handles crazy things like
+Fortran's Hollerith constant<sup>1</sup>, where you precede a string
+with the count of how many characters are in it, and then a `H`:
 
 {% highlight fortran %}
       PRINT *, 10
@@ -35,9 +38,15 @@ This crazy syntax goes all the way back to Fortran I, and is still
 supported in Fortran77, so a FORTRAN compiler has to be able to handle
 it.
 
-When I do get around to looking at Rattler, this will be one of the
-things I want to know: Can it change its parsing behavior based on
-some prior parse node?  Can it use the count to know how many
+So, that's the question.  Can Rattler change its parsing behavior
+based on some prior parse node?  Can it use the count to know how many
 characters are in the string?  Not because every parser should be able
 to parse Fortran, but because being able to parse a Hollerith constant
 means that the parser has a way to do unusual things when needed.
+
+<sup>1</sup> When used in the FORMAT statement, The _nHaaa_ syntax is
+not actually a Hollerith constant.  It's a Hollerith format
+specification.  Whatever.  I only mention this to keep any of the
+three people who have read the Fortran specification from bugging me
+about it.  Oh, and while I'm at it: Yes, I know it's FORTRAN and not
+Fortran.  I think we can use mixed case now, 50 years later.
