@@ -48,5 +48,4 @@ means that the parser has a way to do unusual things when needed.
 not actually a Hollerith constant.  It's a Hollerith format
 specification.  Whatever.  I only mention this to keep any of the
 three people who have read the Fortran specification from bugging me
-about it.  Oh, and while I'm at it: Yes, I know it's FORTRAN and not
-Fortran.  I think we can use mixed case now, 50 years later.
+about it.
