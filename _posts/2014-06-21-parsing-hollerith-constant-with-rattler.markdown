@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Parsing Hollerith constant with Rattler"
+title: "Parsing Fortran's Hollerith constant with Rattler"
 date: 2014-06-21 04:30:00
 categories: ruby parsing-expression-grammars fortran
 ---
