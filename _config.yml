@@ -3,3 +3,4 @@ markdown: redcarpet
 highlighter: rouge
 gems:
 - jekyll-sitemap
+- jekyll-redirect-from
