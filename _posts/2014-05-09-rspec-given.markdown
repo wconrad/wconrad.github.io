@@ -3,7 +3,9 @@ layout: post
 title: "rspec-given: Specs that read like Cucumber"
 date: 2014-05-09 06:00:00
 categories: ruby rspec testing
-redirect_from: /ruby/rspec/testing/2014/05/08/rspec-given.html
+redirect_from:
+- /ruby/rspec/testing/2014/05/08/rspec-given.html
+- /rspec-given.html
 ---
 
 I followed a chain of blog entries and comments where people were

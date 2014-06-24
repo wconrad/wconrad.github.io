@@ -6,6 +6,7 @@ categories: ruby parsing-expression-grammars fortran
 redirect_from:
 - /ruby/parsing-expression-grammars/2014/06/19/rattler.html
 - /ruby/parsing-expression-grammars/fortran/2014/06/19/rattler.html
+- /rattler.html
 ---
 
 I just noticed this: [Language Designers

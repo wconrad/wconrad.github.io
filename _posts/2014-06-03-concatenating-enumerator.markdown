@@ -3,7 +3,9 @@ layout: post
 title: "Concatenating Enumerator"
 date: 2014-06-03 15:00:00
 categories: ruby fortran
-redirect_from: /ruby/fortran/2014/06/03/concatenating-enumerator.html
+redirect_from:
+- /ruby/fortran/2014/06/03/concatenating-enumerator.html
+- /concatenating-enumerator.html
 ---
 
 First I'm going to complain/brag about how complex Fortran can be, and

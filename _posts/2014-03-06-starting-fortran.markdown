@@ -3,7 +3,9 @@ layout: post
 title: "Next Project: FORTRAN"
 date: 2014-03-07 04:23:00
 categories: fortran
-redirect_from: /fortran/2014/03/06/starting-fortran.html
+redirect_from:
+- /fortran/2014/03/06/starting-fortran.html
+- /starting-fortran.html
 ---
 
 Now that I'm done with [basic101][basic101], the next program I want

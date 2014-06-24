@@ -3,7 +3,9 @@ layout: post
 title: "Fortran, take IV"
 date: 2014-06-01 15:00:00
 categories: ruby fortran
-redirect_from: /ruby/fortran/2014/06/01/fortran-take-4.html
+redirect_from:
+- /ruby/fortran/2014/06/01/fortran-take-4.html
+- /fortran-take-4.html
 ---
 
 I've failed to make a Fortran interpreter, written in Ruby, three

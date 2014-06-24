@@ -3,7 +3,9 @@ layout: post
 title: "Designing FORTRAN: Setting the Target"
 date: 2014-03-07 05:10:00
 categories: fortran
-redirect_from: /fortran/2014/03/06/fortran-design-target.html
+redirect_from:
+- /fortran/2014/03/06/fortran-design-target.html
+- /fortran-design-target.html
 ---
 
 # Which FORTRAN?
