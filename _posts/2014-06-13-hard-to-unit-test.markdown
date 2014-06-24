@@ -3,6 +3,7 @@ layout: post
 title: "Some code is hard to unit test"
 date: 2014-06-13 05:00:00
 categories: fortran ruby testing
+redirect_from: /fortran/ruby/testing/2014/06/12/hard-to-unit-test.html
 ---
 
 I'm bothered that I can't figure out how to write a reasonable unit

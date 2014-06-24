@@ -3,6 +3,7 @@ layout: post
 title: "We have FORMAT"
 date: 2014-06-07 06:00:00
 categories: fortran
+redirect_from: /fortran/2014/06/06/we-have-format.html
 ---
 
 We have FORMAT statements.  This code:

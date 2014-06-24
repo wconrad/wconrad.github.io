@@ -3,6 +3,7 @@ layout: post
 title: "Two ways to decorate a model in Ruby"
 date: 2014-05-15 15:00:00
 categories: ruby design-patterns mvc
+redirect_from: /ruby/design-patterns/mvc/2014/05/15/decorator.html
 ---
 
 In applications using the MVC (Model View Controller) architecture, it

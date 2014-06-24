@@ -3,6 +3,7 @@ layout: post
 title: "But PostScript is harder to read than LISP"
 date: 2014-03-17 14:19:00
 categories: postscript lisp
+redirect_from: /postscript/lisp/2014/03/17/postscript-is-hard-to-read.html
 ---
 
 There is one significant area where Postscript is worse than LISP.  In

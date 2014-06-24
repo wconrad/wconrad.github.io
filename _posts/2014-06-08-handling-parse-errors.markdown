@@ -3,6 +3,7 @@ layout: post
 title: "Handling parse errors"
 date: 2014-06-08 05:00:00
 categories: fortran
+redirect_from: /fortran/2014/06/07/handling-parse-errors.html
 ---
 
 I've plowed through the TODO list.  It feels good to have all those

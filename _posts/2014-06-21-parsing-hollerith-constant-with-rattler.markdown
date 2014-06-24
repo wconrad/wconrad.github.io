@@ -3,6 +3,7 @@ layout: post
 title: "Parsing Fortran's Hollerith constant with Rattler"
 date: 2014-06-21 04:30:00
 categories: ruby parsing-expression-grammars fortran
+redirect_from: /ruby/parsing-expression-grammars/fortran/2014/06/20/parsing-hollerith-constant-with-rattler.html
 ---
 
 # The problem
