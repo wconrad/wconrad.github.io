@@ -4,4 +4,3 @@ highlighter: rouge
 permalink: /:year:month:day/:title.html
 gems:
 - jekyll-sitemap
-- jekyll-redirect-from
