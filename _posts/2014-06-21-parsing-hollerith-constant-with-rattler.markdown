@@ -10,8 +10,8 @@ redirect_from:
 
 # The problem
 
-[I recent wondered][1] whether Rattler could parse something as nasty
-as Fortran's Hollerith constant.  It turns out, it can, quite
+[I recently wondered][1] whether Rattler could parse something as
+nasty as Fortran's Hollerith constant.  It turns out, it can, quite
 easily.
 
 A hollerith constant is a crazy way of specifying a string literal
