@@ -23,7 +23,7 @@ from Fortran and write a Basic interpreter, in order to learn Parslet
 using a simpler language.  Having finished that, I went back to
 Fortran with renewed confidence.  So, on to:
 
-_Take 3_, against using the Parslet parser.  At which I failed, again,
+[_Take 3_]({% post_url 2014-03-06-starting-fortran %}), against using the Parslet parser.  At which I failed, again,
 when it came to generating the parse tree.  I just don't seem to be
 able to wrap my head around the mechanics of building a parse tree in
 Parslet.  Among other things, left associative operators are a pain in
