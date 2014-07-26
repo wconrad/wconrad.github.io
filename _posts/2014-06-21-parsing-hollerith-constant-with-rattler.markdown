@@ -10,7 +10,7 @@ redirect_from:
 
 # The problem
 
-I recent wondered whether Rattler could parse something as nasty
+[I recent wondered][1] whether Rattler could parse something as nasty
 as Fortran's Hollerith constant.  It turns out, it can, quite
 easily.
 
@@ -73,3 +73,5 @@ Let's break down the definition of _hollerith_.
 Rattler has passed my acid test for parsers with elegance and ease.  I
 think the next thing to do is to convert the Fortran interpreter from
 my hand-rolled parser to Rattler and see how it holds up under fire.
+
+[1]: {% post_url 2014-06-19-rattler %}
