@@ -15,7 +15,7 @@ computer languages, just scroll down to the bottom for the Ruby code.
 
 # Fortran formatted I/O: It's complicated!
 
-[In my Fortran interpreter]({% post_url 2014-06-01-fortran-take-4 %}),
+In my Fortran interpreter,
 I'm taking a stab at Fortran's somewhat intimidating format statement.
 The format statement is a DSL for formatted I/O, and it is awash in
 features.  I'll show some examples.  Don't try too hard to understand
