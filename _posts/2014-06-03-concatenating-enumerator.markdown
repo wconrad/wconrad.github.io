@@ -15,12 +15,12 @@ computer languages, just scroll down to the bottom for the Ruby code.
 
 # Fortran formatted I/O: It's complicated!
 
-[In my Fortran interpreter][1], I'm taking a stab at Fortran's
-somewhat intimidating format statement.  The format statement is a DSL
-for formatted I/O, and it is awash in features.  I'll show some
-examples.  Don't try too hard to understand them--this isn't mean to
-be a tutorial, so I'm going to gloss over a _lot_.  Just bask in the
-complexity.
+In my Fortran interpreter,
+I'm taking a stab at Fortran's somewhat intimidating format statement.
+The format statement is a DSL for formatted I/O, and it is awash in
+features.  I'll show some examples.  Don't try too hard to understand
+them--this isn't mean to be a tutorial, so I'm going to gloss over a
+_lot_.  Just bask in the complexity.
 
 Here's a simple example writing an integer, a float ("real"
 in Fortran parlance<sup>1</sup>), 
@@ -186,5 +186,3 @@ numbers are a pretty miserable subset of real numbers.
 <sup>2</sup> Yes, the data type we now call "string," Fortran called
 "character."  That makes naming some of the variables in a Fortran
 interpreter _really_ awkward.
-
-[1]: {% post_url 2014-06-01-fortran-take-4 %}

@@ -23,12 +23,12 @@ from Fortran and write a Basic interpreter, in order to learn Parslet
 using a simpler language.  Having finished that, I went back to
 Fortran with renewed confidence.  So, on to:
 
-[_Take 3_][1], against using the Parslet parser.  At which I failed,
-again, when it came to generating the parse tree.  I just don't seem
-to be able to wrap my head around the mechanics of building a parse
-tree in Parslet.  Among other things, left associative operators are a
-pain in Parslet (and, if I had to guess, in any PEG).  I pretty much
-gave up on Fortran after take 3.
+_Take 3_, against using the Parslet parser.  At which I failed, again,
+when it came to generating the parse tree.  I just don't seem to be
+able to wrap my head around the mechanics of building a parse tree in
+Parslet.  Among other things, left associative operators are a pain in
+Parslet (and, if I had to guess, in any PEG).  I pretty much gave up
+on Fortran after take 3.
 
 Then, I decided to write tutorial on how [recursive descent
 compilers](http://en.wikipedia.org/wiki/Recursive_descent_parser) can
@@ -80,5 +80,3 @@ It remains to be seen whether the recursive descent compiler with
 backtracking is going to fly--Wikipedia warns that there could be
 trouble ahead, such as possibly requiring exponential time.  But,
 forging ahead...
-
-[1]: {% post_url 2014-03-06-starting-fortran %}

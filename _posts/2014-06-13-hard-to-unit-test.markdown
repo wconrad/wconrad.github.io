@@ -76,7 +76,7 @@ It's not as important that there's a unit test for a piece of code as
 it is that there is a test _somewhere_.
 
 So, I think I'm going to let the integration tests cover this one.
-It's not that bad: A great deal of [basic101][1] is covered through
+It's not that bad: A great deal of basic101 is covered through
 integration tests, and that worked out fine.  Integration tests aren't
 as fast to run, but they are the only test you can write that are
 immune from how the code does it.  They are the ultimate in
@@ -91,5 +91,4 @@ and writes to files, integration tests are as easy as anything.
 <sup>1</sup> But see, for example, [hexagonal architecture][2] as a
 way of making an application easier to test.
 
-[1]: {% post_url 2014-03-06-basic101 %}
 [2]: http://www.duncannisbet.co.uk/hexagonal-architecture-for-testers-part-1
