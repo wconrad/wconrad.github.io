@@ -47,7 +47,8 @@ Here's an example of HATEOAS in a JSON response:
       }
     }
 
-The _purchase_url_ attribute is it.
+The `purchase_url` attribute is it.  Once you've got a book in your
+hand, that's the URI to purchase it.
 
 Andy's article is about how to properly architect your Rails
 application to do this.  The issue is:
@@ -60,9 +61,9 @@ option 1: Render a view/partial that builds the JSON as needed.  Views
 _do_ have access to route helpers.
 
 Andy rejected option 1, but commenter Brandon Beacher explained why he
-thinks it's a good option, and gave an [example][6] of how he's done
-it.  It looks like an attractive approach to me.  The implementation
-looks simple, it doesn't fight Rails, and his argument is compelling:
+thinks it's best, and gave an [example][6] of how he's done it.  It
+looks like an attractive approach to me.  The implementation looks
+simple, it doesn't fight Rails, and his argument is compelling:
 
 * "The json and xml representations of a model are just views, no?"
 
