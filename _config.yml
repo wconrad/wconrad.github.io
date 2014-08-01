@@ -1,8 +1,7 @@
 name: Wayne Conrad's Blog
 markdown: redcarpet
-highlighter: rouge
+highlighter: pygments
 permalink: /:year:month:day/:title.html
 gems:
 - jekyll-sitemap
 - jekyll-redirect-from
-- rouge
