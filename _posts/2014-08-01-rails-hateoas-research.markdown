@@ -2,7 +2,7 @@
 layout: post
 title: "Rails HATEOAS notes"
 date: 2014-08-01 08:00:00
-categories: ruby oop
+categories: rails rest hateoas
 ---
 
 These are notes summarizing my research into how to fully implement
