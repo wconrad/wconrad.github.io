@@ -100,7 +100,7 @@ After applying HAL, this becomes:
     }}
 
 * The _links section seems simple enough.
-* _Those _underscores are obnixious.
+* _Leading _underscores _are _obnoxious.
 * The _embedded section is for nested resources, I think..
 
 I don't know if HAL is good or not.  It makes me uneasy--the responses
@@ -116,11 +116,7 @@ The money quote from Nick's article is this:
 
 -----
 
-<sup>1</sup> _HATEOAS_?  You can't pronounce it, but it looks like you
-ought to be able to.  And starting with the word "hate" and not having
-the rest of the acronym be a clever play on what it is we supposedly
-hate is _lame_.  Unless we're supposed to hate the Organization of
-American States.
+<sup>1</sup> _HATEOAS_?  Hate the Organization of American States?
 
 [1]: http://martinfowler.com/articles/richardsonMaturityModel.html
 [2]: http://atompub.org/rfc4287.html
