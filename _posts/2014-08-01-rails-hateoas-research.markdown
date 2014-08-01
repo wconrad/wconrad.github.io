@@ -75,7 +75,7 @@ simple, it doesn't fight Rails, and his argument is compelling:
 * "The json and xml views will be in the same folder alongside the
   html ones."
 
-## Nick Sutterer's HAL proposal
+# Nick Sutterer's HAL proposal
 
 Nick Sutterer [proposes the use of Mike Kelly's [HAL][8] protocol][7]
 to encode links in the JSON response.  His starting example of a
