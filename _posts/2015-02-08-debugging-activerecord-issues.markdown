@@ -6,7 +6,7 @@ categories: ruby
 ---
 
 Things I learned when exploring [an apparent issue with the
-composite_primary_keys gem][1]:
+`composite_primary_keys` gem][1]:
 
 * The [seed_dump][2] gem is a great way to capture the contents of a
   production database so that you can debug locally.
