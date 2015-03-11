@@ -139,7 +139,7 @@ end
 StatsPrinter.print(stats)
 {% endhighlight %}
 
-But I prefer the more minimal main method that ConcatnatingEnumerator
+But I prefer the more minimal main method that ConcatenatingEnumerator
 makes possible.  You may reasonably disagree.
 
 [1]: {% post_url 2014-06-03-concatenating-enumerator %}
