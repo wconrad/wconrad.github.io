@@ -172,9 +172,15 @@ and a simple demonstration of its use:
 {% highlight ruby %}
 enum1 = [1, 2, 3].to_enum
 enum2 = [4, 5].to_enum
-enum = ConcatenatingEnumerator.new(enum1, enum2)
+enum = ConcatenatingEnumerator.new([enum1, enum2])
 p enum.to_a    #=> [1, 2, 3, 4, 5]
 {% endhighlight %}
+
+**Note** - In [More Concatenating Enumerator][1], there's a minor
+enhancement to ConcatenatingEnumerator, and another example of how it
+is used.
+
+[1]: {% post_url 2014-06-03-concatenating-enumerator %}
 
 -----
 
