@@ -180,7 +180,7 @@ p enum.to_a    #=> [1, 2, 3, 4, 5]
 enhancement to ConcatenatingEnumerator, and another example of how it
 is used.
 
-[1]: {% post_url 2014-06-03-concatenating-enumerator %}
+[1]: {% post_url 2015-03-10-more-concatenating-enumerator %}
 
 -----
 
