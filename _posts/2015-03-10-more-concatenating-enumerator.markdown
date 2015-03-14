@@ -12,8 +12,8 @@ code came out really clean.
 
 # ConcatenatingEnumerator
 
-Here's the concatenating enumerator.  It lets you glue any number of
-enumeratorable things together and treat them as a single enumerator:
+Here's the concatenating  enumerator.  It lets you glue  any number of
+enumerable things together and treat them as a single enumerator:
 
 {% highlight ruby %}
 class ConcatenatingEnumerator < Enumerator
