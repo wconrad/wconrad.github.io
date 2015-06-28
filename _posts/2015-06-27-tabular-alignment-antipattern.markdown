@@ -79,7 +79,7 @@ Now that's not pretty, is it?
 
 # Makes a Mess of Version Control History
 
-When a block of tabularly lined code needs to be realigned, the
+When a block of tabularly alined code needs to be realigned, the
 version control system will treat each of those lines as having been
 modified:
 
