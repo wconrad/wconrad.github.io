@@ -109,7 +109,7 @@ end
 {% endhighlight %}
 
 The result of the top-level `catch` is the result of the first `throw`
-that gets executed.  Using try/catch gives the DSL a nice way to stop
-looking when the prefill value is found.
+that gets executed.  Using throw/catch gives the DSL a nice way to
+stop looking when the prefill value is found.
 
 [1]: http://rubylearning.com/blog/2011/07/12/throw-catch-raise-rescue--im-so-confused/
