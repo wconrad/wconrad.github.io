@@ -41,17 +41,17 @@ business rules for how prefill works with each field.  At first, these
 methods looked like this:
 
 {% highlight ruby %}
-  def first_name
-    if @bill_pay_request
-      @bill_pay_request.billing_first_name
-    elsif @document
-      @document.first_name
-    elsif test_mode?
-      'BARNEY'
-    else
-      nil
-    end
+def first_name
+  if @bill_pay_request
+    @bill_pay_request.billing_first_name
+  elsif @document
+    @document.first_name
+  elsif test_mode?
+    'BARNEY'
+  else
+    nil
   end
+end
 {% endhighlight %}
 
 Just one or two methods like that is no big deal.  But with 20 of
@@ -59,14 +59,14 @@ them, we wanted a way to make the business rules stand out better.  We
 ended up with this instead:
 
 {% highlight ruby %}
-  def first_name
-    get_value do
-      from_request :billing_first_name
-      from_document :first_name
-      when_test_mode 'BARNEY'
-      default nil
-    end
+def first_name
+  get_value do
+    from_request :billing_first_name
+    from_document :first_name
+    when_test_mode 'BARNEY'
+    default nil
   end
+end
 {% endhighlight %}
 
 The DSL that makes this work is implemented in just a few private
@@ -74,38 +74,38 @@ methods.  This is the first of them.  All it does is to catch a symbol
 and then yield to the passed block:
 
 {% highlight ruby %}
-  def get_value
-    catch(:value) do
-      yield
-    end
+def get_value
+  catch(:value) do
+    yield
   end
+end
 {% endhighlight %}
 
 The other methods throw a value, if it exists.  If the value does not
 exist, they just return so that the next method can be tried:
 
 {% highlight ruby %}
-  def from_request(request_attribute)
-    if @bill_pay_request
-      throw :value, @bill_pay_request.send(request_attribute)
-    end
+def from_request(request_attribute)
+  if @bill_pay_request
+    throw :value, @bill_pay_request.send(request_attribute)
   end
+end
 
-  def from_document(document_attribute)
-    if @document
-      throw :value, @document.send(document_attribute)
-    end
+def from_document(document_attribute)
+  if @document
+    throw :value, @document.send(document_attribute)
   end
+end
 
-  def when_test_mode(test_value)
-    if test_mode?
-      throw :value, test_value
-    end
+def when_test_mode(test_value)
+  if test_mode?
+    throw :value, test_value
   end
+end
 
-  def default(default_value)
-    throw :value, default_value
-  end
+def default(default_value)
+  throw :value, default_value
+end
 {% endhighlight %}
 
 The result of the top-level `catch` is the result of the first `throw`
