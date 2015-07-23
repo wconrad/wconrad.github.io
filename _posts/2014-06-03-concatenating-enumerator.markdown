@@ -176,11 +176,17 @@ enum = ConcatenatingEnumerator.new([enum1, enum2])
 p enum.to_a    #=> [1, 2, 3, 4, 5]
 {% endhighlight %}
 
-**Note** - In [More Concatenating Enumerator][1], there's a minor
+**2015-03-11** - In [More Concatenating Enumerator][1], there's a minor
 enhancement to ConcatenatingEnumerator, and another example of how it
 is used.
 
+**2015-07-23**: Someone on the Ruby forum [asked if enumerators could
+be joined][2].  An [issue was created asking for the feature][3], but
+was rejected.
+
 [1]: {% post_url 2015-03-10-more-concatenating-enumerator %}
+[2]: https://www.ruby-forum.com/topic/1965489
+[3]: https://redmine.ruby-lang.org/issues/709
 
 -----
 
