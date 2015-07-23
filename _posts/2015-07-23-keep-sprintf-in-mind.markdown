@@ -56,7 +56,7 @@ puts "version %-9s used %7d times from %s through %s" % [
 # => version v3.0.0    used  138893 times from 2015-07-19 through 2015-07-23
 {% endhighlight %}
 
-And it does so while looking pretty.
+And it does so while looking good.
 
 So the next time you're interpolating and the string gets too long or
 hard to read, consider the virtues of String#%.
