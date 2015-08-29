@@ -25,8 +25,8 @@ include ".nobackup".  Also, start it with a "." so it will be hidden:
 
     mv my_big_directory .my_big_directory.nobackup
 
-Now create a symblink to the directory so it can be referenced with
-its original name:
+Now create a symlink to the directory so it can be referenced with its
+original name:
 
     ln -s .my_big_directory.nobackup my_big_directory
 
