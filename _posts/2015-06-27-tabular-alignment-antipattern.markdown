@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Avoid Tabular Alignment in Code"
-date: 2015-06-27 16:00:00
+date: 2015-06-27 16:00:00 -07:00
 categories: antipatterns ruby
 ---
 

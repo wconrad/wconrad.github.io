@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "A BASIC Interpreter in Ruby"
-date: 2014-03-06 16:20:00
+date: 2014-03-06 16:20:00 -07:00
 categories: basic parslet gem
 redirect_from:
 - /basic/parslet/gem/2014/03/06/basic101.html

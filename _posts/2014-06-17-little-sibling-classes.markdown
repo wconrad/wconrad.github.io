@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Little sibling classes"
-date: 2014-06-17 20:00:00
+date: 2014-06-17 20:00:00 -07:00
 categories: ruby oop duck-typing
 redirect_from:
 - /ruby/oop/duck-typing/2014/06/17/little-sibling-classes.html

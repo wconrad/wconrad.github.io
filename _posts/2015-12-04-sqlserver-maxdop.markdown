@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Configuring SqlServer MAXDOP (Maximum Degree of Parallelism)"
-date: 2015-12-04 00:00:00
+date: 2015-12-04 00:00:00 -07:00
 categories: sqlserver
 ---
 

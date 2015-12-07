@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tiny DSL using throw/catch"
-date: 2015-07-14 12:00:00
+date: 2015-07-14 12:00:00 -07:00
 categories: ruby
 ---
 

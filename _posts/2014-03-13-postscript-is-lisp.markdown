@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "PostScript is LISP, sort of"
-date: 2014-03-13 12:45:00
+date: 2014-03-13 12:45:00 -07:00
 categories: postscript lisp
 redirect_from:
 - /postscript/lisp/2014/03/13/postscript-is-lisp.html

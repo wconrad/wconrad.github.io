@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Handling parse errors"
-date: 2014-06-08 05:00:00
+date: 2014-06-08 05:00:00 -07:00
 categories: fortran
 redirect_from:
 - /fortran/2014/06/07/handling-parse-errors.html

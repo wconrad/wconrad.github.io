@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Rails HATEOAS notes"
-date: 2014-08-01 08:00:00
+date: 2014-08-01 08:00:00 -07:00
 categories: rails rest hateoas
 ---
 

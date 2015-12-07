@@ -1,0 +1,13 @@
+---
+layout: post
+title: "Simh/Nova - Table of Contents"
+date: 2015-12-07 12:00:00 -07:00
+categories: retrocomputing
+---
+
+Posts in the series "Learning the Data General Nova with the simh
+emulator":
+
+* [Memories of Minicomputers]({% post_url 2015-12-06-memories-of-minicomputers %})
+* [Hello World]({% post_url 2015-12-07-simh-nova-hello-world %})
+* [Recovering from a Bad Shutdown]({% post_url 2015-12-07-simh-nova-bad-shutdown %})

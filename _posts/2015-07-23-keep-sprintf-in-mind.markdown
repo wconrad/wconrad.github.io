@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Keep String#% in mind"
-date: 2015-07-23 00:00:00
+date: 2015-07-23 00:00:00 -07:00
 categories: ruby
 ---
 

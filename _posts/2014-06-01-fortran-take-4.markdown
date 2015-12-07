@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Fortran, take IV"
-date: 2014-06-01 15:00:00
+date: 2014-06-01 15:00:00 -07:00
 categories: ruby fortran
 redirect_from:
 - /ruby/fortran/2014/06/01/fortran-take-4.html

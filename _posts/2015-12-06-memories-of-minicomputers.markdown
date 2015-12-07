@@ -1,9 +1,12 @@
 ---
 layout: post
 title: "Memories of minicomputers: The Modcomp II, and the Data General Nova"
-date: 2015-12-06 12:00:00
+date: 2015-12-06 12:00:00 -07:00
 categories: retrocomputing
 ---
+
+*This post is part of the series on [Learning the DataGenera Nova with
+simh]({% post_url 2015-12-07-simh-toc %})*
 
 Once upon a time, I worked in a small computer lab attached to an
 Exxon Nuclear research facility.  There were two 16-bit minicomputers:

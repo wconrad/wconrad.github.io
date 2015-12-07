@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Debugging ActiveRecord Issues"
-date: 2015-02-08 21:16:00
+date: 2015-02-08 21:16:00 -07:00
 categories: ruby
 ---
 

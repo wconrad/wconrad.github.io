@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Bug Report == Cucumber Scenario?"
-date: 2014-03-06 06:19:00
+date: 2014-03-06 06:19:00 -07:00
 categories: cucumber
 redirect_from:
 - /cucumber/2014/03/05/bug-report-eq-cucumber-scenario.html

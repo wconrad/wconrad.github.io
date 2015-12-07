@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "More ConcatenatingEnumerator"
-date: 2015-03-10 14:45:00
+date: 2015-03-10 14:45:00 -07:00
 categories: ruby
 ---
 

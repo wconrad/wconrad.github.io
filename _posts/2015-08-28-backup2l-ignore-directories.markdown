@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "A trick to make backup2l ignore certain directories"
-date: 2015-08-28 00:00:00
+date: 2015-08-28 00:00:00 -07:00
 categories: linux
 ---
 

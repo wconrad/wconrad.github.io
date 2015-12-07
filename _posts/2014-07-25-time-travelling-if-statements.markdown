@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Dynamic dispatch is time travel for if statements"
-date: 2014-07-25 13:00:00
+date: 2014-07-25 13:00:00 -07:00
 categories: ruby oop
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why to check in a library's Gemfile.lock"
-date: 2015-01-23 10:30:00
+date: 2015-01-23 10:30:00 -07:00
 categories: ruby
 ---
 

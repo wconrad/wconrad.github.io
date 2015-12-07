@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "A few tips for using bunny library with RabbitMQ"
-date: 2015-08-05 12:00:00
+date: 2015-08-05 12:00:00 -07:00
 categories: ruby
 ---
 

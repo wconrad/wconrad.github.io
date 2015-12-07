@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "When git goes wrong--Adding files to a commit"
-date: 2015-08-28 12:00:00
+date: 2015-08-28 12:00:00 -07:00
 categories: git
 ---
 

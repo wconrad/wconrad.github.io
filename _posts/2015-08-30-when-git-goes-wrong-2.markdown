@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "When git goes wrong--Removing a file from a commit"
-date: 2015-08-30 01:00:00
+date: 2015-08-30 01:00:00 -07:00
 categories: git
 ---
 

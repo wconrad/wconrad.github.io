@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "REST API Versioning"
-date: 2014-08-01 11:00:00
+date: 2014-08-01 11:00:00 -07:00
 categories: rest
 ---
 
