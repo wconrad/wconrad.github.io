@@ -5,8 +5,8 @@ date: 2015-12-07 12:01:00 -07:00
 categories: retrocomputing
 ---
 
-*This post is part of the series on [Learning the DataGenera Nova with
-simh]({% post_url 2015-12-07-simh-toc %})*
+*This post is part of the series on [Learning the Data General Nova
+with simh]({% post_url 2015-12-07-simh-toc %}).*
 
 [simh][1] is a fantastic program that simulates more than a dozen
 computers.  Its documentation, although complete, is unfriendly to
@@ -72,7 +72,7 @@ rm -rf Disks Licenses
 
 # Starting simh and RDOS
 
-    wayne@mercury:~/lab/nova$ dgnova
+    $ dgnova
     
     NOVA simulator V3.8-1
     sim> att dkp0 rdos_d31.dsk

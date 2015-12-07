@@ -10,4 +10,5 @@ emulator":
 
 * [Memories of Minicomputers]({% post_url 2015-12-06-memories-of-minicomputers %})
 * [Hello World]({% post_url 2015-12-07-simh-nova-hello-world %})
-* [Recovering from a Bad Shutdown]({% post_url 2015-12-07-simh-nova-bad-shutdown %})
+* Recovering from a Bad Shutdown
+* Scripting simh startup
