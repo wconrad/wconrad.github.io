@@ -1,34 +1,13 @@
 ---
 layout: post
-title: "When git goes wrong--Adding files to a commit"
-date: 2015-08-28 12:00:00
+title: "When git goes wrong--Removing a file from a commit"
+date: 2015-08-30 01:00:00
 categories: git
 ---
 
-[git][1] is more than a backup mechanism.  It's a way to communicate
-with other programmers and with your future self.  In order for this
-communication to be clear, it's important to keep your git commits
-clean.  A commit is cleanest when it does one thing, has passing
-tests, and has a good description.
+[When Git Goes Wrong][1], continued.
 
-We're going to explore how to create good git commits when you start
-out with bad ones.  It's pretty common to accidentally commit the
-wrong thing, or forget to commit a file, but git makes it easy to fix
-a previous commit.  But first, this important warning:
-
-**IMPORTANT WARNING**
-
-Once you have pushed a commit to a remote server that other
-programmers can pull from, you shouldn't change it.  You can change
-it--it's not difficult, but you can really mess up life for those
-other programmers if you don't know what you're doing.  Until then,
-don't attempt to rewrite a commit that's already been pushed to a
-remote server.
-
-However, _before_ you've pushed any commits upstream to origin, you
-can change them around all you want.  Let's learn how.
-
-# I forgot to add some files to my commit
+# I added too many files to a commit
 
 Suppose you have made changes to a few files:
 
@@ -147,4 +126,4 @@ M       foo
 
 Git means never having to say you're sorry.
 
-[1]: https://git-scm.com/
+[1]: {% post_url 2015-08-28-when-git-goes-wrong-1 %}
