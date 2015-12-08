@@ -8,6 +8,8 @@ categories: retrocomputing
 *This post is part of the series on [Learning the Data General Nova
 with simh]({% post_url 2015-12-07-simh-toc %}).*
 
+# Starting simh the hard way
+
 In order to start simh with RDOS, we need to enter the same series of
 commands every time:
 
@@ -19,6 +21,8 @@ commands every time:
     sim> boot dkp0
     
     NOVA simulator V3.8-1
+
+# Starting simh with a script
 
 We can put those commands into a file so that we don't have to type
 them.  Create a file boot.simh with the simh commands:
