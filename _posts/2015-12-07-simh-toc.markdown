@@ -10,5 +10,6 @@ emulator":
 
 * [Memories of Minicomputers]({% post_url 2015-12-06-memories-of-minicomputers %})
 * [Hello World]({% post_url 2015-12-07-simh-nova-hello-world %})
-* Recovering from a Bad Shutdown
-* Scripting simh startup
+* [Recovering from a Bad Shutdown]({% post_url 2015-12-08-simh-nova-bad-shutdown %})
+* [Scripting simh startup]({% post_url 2015-12-09-simh-scripting-startup %})
+* Mounting a second hard drive

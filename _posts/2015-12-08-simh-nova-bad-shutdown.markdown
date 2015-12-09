@@ -180,10 +180,3 @@ Manual](http://bitsavers.trailing-edge.com/pdf/dg/software/rdos/093-000109-01_RD
 
 * p. 4-17 - `CLEAR` command
 * p. 4-42 - `LIST` command
-
-[1]: http://bitsavers.trailing-edge.com/pdf/dg/software/rdos/093-000109-00_RDOS_CLI_Feb75.pdf
-
-
-[1]: https://github.com/simh/simh
-[2]: https://en.wikipedia.org/wiki/Data_General_Nova
-[3]: http://simh.trailing-edge.com/software.html
