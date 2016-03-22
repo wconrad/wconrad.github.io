@@ -110,13 +110,13 @@ Do this for each VM.
 
 From each VM, you should be able to get to the internet:
 
-    `ping google.com`
+    ping google.com
 
 You should be able to get to another vm:
 
-    `ping 192.168.51.2`
+    ping 192.168.51.2
 
 From the host, you should be able to get to each vm:
 
-    `ping 192.168.51.2`
-    `ping 192.168.51.3`
+    ping 192.168.51.2
+    ping 192.168.51.3
