@@ -34,10 +34,10 @@ I tested this recipe with:
 
 # The recipe
 
-In this recipe, each VM is dual-homed.  The first network interface
-connects the host and VMs together through a "host-only network."  The
-second network interfaces gives the VM access to the internet through
-the NatNetwork, and also gives the host access to the VMs.
+In this recipe, each VM is dual-homed.The first network interfaces
+gives the VM access to the internet through the NatNetwork, and also
+gives the host access to the VMs.  The second network interface
+connects the host and VMs together through a "host-only network."
 
 # Configuring the Host-only network
 
