@@ -1,5 +1,5 @@
 name: Wayne Conrad's Blog
-highlighter: pygments
+highlighter: rouge
 future: false
 permalink: /:year:month:day/:title.html
 gems:
