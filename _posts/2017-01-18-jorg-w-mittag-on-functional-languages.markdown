@@ -55,8 +55,8 @@ return a value just doesn't do anything.
 
 Marc-Andre:
 
-In a pure functional language what would a println function return or
-would it even be define like a "normal" println ?
+> In a pure functional language what would a println function return
+or would it even be define like a "normal" println ?
 
 Jörg W Mittag:
 
