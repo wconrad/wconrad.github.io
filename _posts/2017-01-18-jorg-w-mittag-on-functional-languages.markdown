@@ -5,7 +5,8 @@ date: 2017-01-18 00:00:00 -07:00
 categories: languages
 ---
 
-On the [stackoverflow Ruby chat](https://chat.stackoverflow.com/),
+On the [stackoverflow Ruby
+chat](https://chat.stackoverflow.com/rooms/44914/ruby-sometimes-on-rails),
 conversation about the difference between statements and expressions
 soon turned to a
 [discourse](https://chat.stackoverflow.com/transcript/44914) about how
